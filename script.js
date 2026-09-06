@@ -1,1 +1,8 @@
-function filterGames(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.game').forEach(g=>{g.style.display=g.innerText.toLowerCase().includes(q)?'flex':'none'})}
+function filterGames() {
+    const q = document.getElementById('search').value.toLowerCase();
+
+    document.querySelectorAll('.game').forEach(g => {
+        g.style.display =
+            g.innerText.toLowerCase().includes(q) ? 'flex' : 'none';
+    });
+}
