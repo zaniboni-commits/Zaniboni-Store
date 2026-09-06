@@ -1,14 +1,27 @@
-# Zaniboni Store
+# zaniboni Store
 
-Vitrine de e-commerce responsiva, sem dependências e pronta para publicar no GitHub Pages.
+Loja web estática com duas categorias:
 
-## Recursos
+- Jogos de PS3
+- Jogos de PS2
 
-- Catálogo filtrável e busca de produtos
-- Sacola de compras persistente no navegador
-- Checkout demonstrativo e cadastro de newsletter
-- Layout responsivo para celular e desktop
+## Como usar
 
-## Publicação no GitHub Pages
+1. Abra `index.html` para testar localmente.
+2. Edite `ps3.html` e `ps2.html` para adicionar seus jogos, capas e links de download.
+3. Envie todos os arquivos para um repositório do GitHub.
+4. Ative o GitHub Pages nas configurações do repositório.
 
-Em **Settings → Pages**, selecione a branch `main` e a pasta `/ (root)`.
+## Estrutura
+
+```text
+ps3-store/
+├── index.html
+├── ps3.html
+├── ps2.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+Use somente arquivos e links que você tenha autorização para distribuir.
