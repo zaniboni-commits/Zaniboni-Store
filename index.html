@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5a3524" />
+  <title>Zaniboni Store — detalhes que contam histórias</title>
+  <meta name="description" content="Uma curadoria de objetos, estilo e presentes para tornar o cotidiano especial." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Frete grátis para pedidos acima de R$ 199 <span>✦</span> Parcelamos em até 6× sem juros</div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="Zaniboni Store, início">ZANIBONI<span>STORE</span></a>
+    <nav aria-label="Navegação principal"><a href="#novidades">Novidades</a><a href="#colecao">Coleções</a><a href="#sobre">Nossa história</a></nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchButton" aria-label="Buscar produtos">⌕</button>
+      <button class="cart-button" id="cartButton" aria-label="Abrir carrinho">Sacola <span id="cartCount">0</span></button>
+    </div>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">EDIÇÃO DE OUTONO · 2026</p><h1>O que é bonito<br />também é <em>sentido.</em></h1><p>Uma seleção feita para acompanhar seus pequenos grandes rituais.</p><a class="button" href="#novidades">Conheça a coleção <span>→</span></a></div>
+      <div class="hero-art" aria-label="Vaso com flores estilizado"><div class="sun"></div><div class="arch"></div><div class="vase"><i></i><i></i><i></i><i></i></div><span class="leaf leaf-one">●</span><span class="leaf leaf-two">●</span><span class="leaf leaf-three">●</span></div>
+    </section>
+    <section class="promise"><div><b>Envio para todo o Brasil</b><span>com rastreio em cada pedido</span></div><div><b>Curadoria especial</b><span>peças escolhidas com carinho</span></div><div><b>Compra segura</b><span>seus dados sempre protegidos</span></div></section>
+    <section class="catalog" id="novidades"><div class="section-heading"><div><p class="eyebrow">FEITO PARA PRESENTEAR</p><h2>Pequenas escolhas,<br /><em>grandes afetos.</em></h2></div><button class="text-button" id="allButton">Ver tudo <span>→</span></button></div>
+      <div class="filters" aria-label="Filtros de categoria"><button class="filter active" data-category="todos">Todos</button><button class="filter" data-category="casa">Casa</button><button class="filter" data-category="estilo">Estilo</button><button class="filter" data-category="bem-estar">Bem-estar</button><button class="filter" data-category="papelaria">Papelaria</button></div>
+      <div class="products" id="productGrid"></div>
+    </section>
+    <section class="editorial" id="colecao"><div class="editorial-art"><div class="window"></div><div class="book b1"></div><div class="book b2"></div><div class="book b3"></div><div class="cup">✦</div></div><div><p class="eyebrow">A CASA ZANIBONI</p><h2>Objetos que deixam<br />a vida mais sua.</h2><p>Inspirada por casas vividas, mesas demoradas e encontros que ficam. A Zaniboni existe para celebrar os detalhes de todos os dias.</p><a class="line-link" href="#sobre">Conheça nossa história <span>→</span></a></div></section>
+    <section class="newsletter" id="sobre"><p class="eyebrow">FICA POR PERTO</p><h2>Receba um pouco<br />de beleza na caixa de entrada.</h2><form id="newsletterForm"><label class="sr-only" for="email">Seu melhor e-mail</label><input id="email" type="email" required placeholder="seuemail@exemplo.com" /><button class="button" type="submit">Quero receber <span>→</span></button></form><p class="form-message" id="formMessage" role="status"></p></section>
+  </main>
+  <footer><a class="brand" href="#inicio">ZANIBONI<span>STORE</span></a><div><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Atendimento</a></div><small>© 2026 Zaniboni Store. Feito com afeto.</small></footer>
+  <aside class="cart-panel" id="cartPanel" aria-label="Sacola de compras" aria-hidden="true"><div class="cart-head"><h2>Sua sacola</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-empty" id="cartEmpty">Sua sacola ainda está vazia.<br /><button class="line-link" id="continueShopping">Continuar comprando →</button></div><div class="cart-footer" id="cartFooter"><div><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div><button class="button checkout" id="checkoutButton">Finalizar pedido <span>→</span></button></div></aside><div class="overlay" id="overlay"></div>
+  <dialog id="searchDialog"><form method="dialog"><button class="close" aria-label="Fechar">×</button><label for="searchInput">O que você procura?</label><input id="searchInput" placeholder="Ex.: vela, caderno, bolsa" autocomplete="off" /><div id="searchResults" class="search-results"></div></form></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
